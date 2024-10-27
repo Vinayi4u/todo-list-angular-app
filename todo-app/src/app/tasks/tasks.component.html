@@ -5,4 +5,12 @@
             <button>Add Task</button>
         </menu>
     </header>
+
+    <ul>
+        @for (task of selectedUserTasks; track $index) {
+            <li>
+                <app-task [task]="task"/>
+            </li>
+        }
+    </ul>
 </section>
