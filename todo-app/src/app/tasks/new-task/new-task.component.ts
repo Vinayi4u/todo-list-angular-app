@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { type NewTask } from '../task/task.model';
+import { CardComponent } from '../../shared/card/card.component';
 
 @Component({
   selector: 'app-new-task',
