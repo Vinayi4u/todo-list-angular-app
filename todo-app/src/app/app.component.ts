@@ -14,4 +14,8 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
   title = 'todo-app';
   users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log('Selected user with id' + id);
+  }
 }
