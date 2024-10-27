@@ -15,9 +15,9 @@ import { TasksComponent } from './tasks/tasks.component';
 export class AppComponent {
   title = 'todo-app';
   users = DUMMY_USERS;
-  selectedUserId = 'u1';
+  selectedUserId?: string;
 
-  get userName() {
+  get selectedUser() {
     return this.users.find((user) => user.id === this.selectedUserId);
   }
   onSelectUser(id: string) {
